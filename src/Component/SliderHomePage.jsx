@@ -8,11 +8,13 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Autoplay, Parallax, Pagination, Navigation } from 'swiper/modules';
+import Navbar from '../Pages/Navbar';
 
 function SlideHomePage()
 {
     return(
-        <>
+        <div className=' text-white h-[95vh]'>
+        <Navbar/>
         <Swiper
                 style={{
                     '--swiper-navigation-color': '#fff',
@@ -27,27 +29,21 @@ function SlideHomePage()
                     disableOnInteraction: false,
                 }}
                 navigation={true}
-                modules={[Parallax,Autoplay, Pagination, Navigation]}
+                modules={[ Autoplay, Pagination, Navigation]}
                 className="mySwiper"
             >
-                <SwiperSlide className=''>
-                    <div className='absolute bottom-32  border left-40  border-red-600 font-bold'>
-                        <div className="title" data-swiper-parallax="-300">
-                            Slide 1
-                        </div>
-                        <div className="subtitle" data-swiper-parallax="-200">
-                            Subtitle
-                        </div>
-                        <div className="text" data-swiper-parallax="-100">
+                <SwiperSlide>
+                    <div className='absolute z-50 bottom-32 left-40'>
+                        <div className="text-5xl font-bold " >Welcome to Slide 1</div>
+                        <div className="text-sm max-w-[50%] my-5" >
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                                dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-                                laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-                                Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-                                Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-                                ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-                                tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+                                dictum mattis velit, sit amet faucibus felis iaculis nec. Null
                             </p>
+                        </div>
+                        <div className="" >
+                           <button className='py-2 px-5 bg-white/10 mr-3  hover:bg-white/30   '>Apply Now</button>
+                           <button className='py-2 px-5 bg-white/10 mr-3  hover:bg-white/30   '>Learn more</button>
                         </div>
                     </div>
                     <div className='opacity-30'>
@@ -56,24 +52,19 @@ function SlideHomePage()
                     </div>
 
                 </SwiperSlide>
+
                 <SwiperSlide className=''>
-                    <div className='absolute bottom-32  border left-40  border-red-600 font-bold'>
-                        <div className="title" data-swiper-parallax="-300">
-                            Slide 1
-                        </div>
-                        <div className="subtitle" data-swiper-parallax="-200">
-                            Subtitle
-                        </div>
-                        <div className="text" data-swiper-parallax="-100">
+                <div className='absolute z-50 bottom-32 left-40'>
+                        <div className="text-5xl font-bold " >Welcome to Slide 1</div>
+                        <div className="text-sm max-w-[50%] my-5" >
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                                dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-                                laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-                                Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-                                Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-                                ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-                                tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+                                dictum mattis velit, sit amet faucibus felis iaculis nec. Null
                             </p>
+                        </div>
+                        <div className="" >
+                           <button className='py-2 px-5 bg-white/10 mr-3  hover:bg-white/30   '>Apply Now</button>
+                           <button className='py-2 px-5 bg-white/10 mr-3  hover:bg-white/30   '>Learn more</button>
                         </div>
                     </div>
                     <div className='opacity-30'>
@@ -84,23 +75,17 @@ function SlideHomePage()
                 </SwiperSlide>
 
                 <SwiperSlide className=''>
-                    <div className='absolute bottom-32  border left-40  border-red-600 font-bold'>
-                        <div className="title" data-swiper-parallax="-300">
-                            Slide 1
-                        </div>
-                        <div className="subtitle" data-swiper-parallax="-200">
-                            Subtitle
-                        </div>
-                        <div className="text" data-swiper-parallax="-100">
+                <div className='absolute z-50 bottom-32 left-40'>
+                        <div className="text-5xl font-bold " >Welcome to Slide 1</div>
+                        <div className="text-sm max-w-[50%] my-5" >
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                                dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-                                laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-                                Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-                                Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-                                ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-                                tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+                                dictum mattis velit, sit amet faucibus felis iaculis nec. Null
                             </p>
+                        </div>
+                        <div className="" >
+                           <button className='py-2 px-5 bg-white/10 mr-3  hover:bg-white/30   '>Apply Now</button>
+                           <button className='py-2 px-5 bg-white/10 mr-3  hover:bg-white/30   '>Learn more</button>
                         </div>
                     </div>
                     <div className='opacity-30'>
@@ -110,25 +95,18 @@ function SlideHomePage()
 
                 </SwiperSlide>
 
-
                 <SwiperSlide className=''>
-                    <div className='absolute bottom-32  border left-40  border-red-600 font-bold'>
-                        <div className="title" data-swiper-parallax="-300">
-                            Slide 1
-                        </div>
-                        <div className="subtitle" data-swiper-parallax="-200">
-                            Subtitle
-                        </div>
-                        <div className="text" data-swiper-parallax="-100">
+                <div className='absolute z-50 bottom-32 left-40'>
+                        <div className="text-5xl font-bold " >Welcome to Slide 1</div>
+                        <div className="text-sm max-w-[50%] my-5" >
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                                dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-                                laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-                                Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-                                Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-                                ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-                                tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+                                dictum mattis velit, sit amet faucibus felis iaculis nec. Null
                             </p>
+                        </div>
+                        <div className="" >
+                           <button className='py-2 px-5 bg-white/10 mr-3  hover:bg-white/30   '>Apply Now</button>
+                           <button className='py-2 px-5 bg-white/10 mr-3  hover:bg-white/30   '>Learn more</button>
                         </div>
                     </div>
                     <div className='opacity-30'>
@@ -138,25 +116,18 @@ function SlideHomePage()
 
                 </SwiperSlide>
 
-
                 <SwiperSlide className=''>
-                    <div className='absolute bottom-32  border left-40  border-red-600 font-bold'>
-                        <div className="title" data-swiper-parallax="-300">
-                            Slide 1
-                        </div>
-                        <div className="subtitle" data-swiper-parallax="-200">
-                            Subtitle
-                        </div>
-                        <div className="text" data-swiper-parallax="-100">
+                <div className='absolute z-50 bottom-32 left-40'>
+                        <div className="text-5xl font-bold " >Welcome to Slide 1</div>
+                        <div className="text-sm max-w-[50%] my-5" >
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                                dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-                                laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-                                Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-                                Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-                                ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-                                tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+                                dictum mattis velit, sit amet faucibus felis iaculis nec. Null
                             </p>
+                        </div>
+                        <div className="" >
+                           <button className='py-2 px-5 bg-white/10 mr-3  hover:bg-white/30   '>Apply Now</button>
+                           <button className='py-2 px-5 bg-white/10 mr-3  hover:bg-white/30   '>Learn more</button>
                         </div>
                     </div>
                     <div className='opacity-30'>
@@ -171,7 +142,7 @@ function SlideHomePage()
             </Swiper>
 
            
-        </>
+        </div>
     )
 }
 
